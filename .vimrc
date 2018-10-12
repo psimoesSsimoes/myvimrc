@@ -25,6 +25,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-scriptease'
 Plug 'rking/ag.vim'
 Plug 'mileszs/ack.vim'
+Plug 'vim-scripts/ZoomWin'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -368,6 +369,9 @@ noremap <leader>0 :tablast<cr>
 " ==================== Fugitive ====================
 vnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gw :Gwrite<CR>
+nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gd :Gvdiff<CR>
 
 " ==================== vim-go ====================
 let g:go_fmt_fail_silently = 0
